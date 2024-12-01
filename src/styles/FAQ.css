@@ -1,0 +1,22 @@
+/* Rest of the CSS remains the same */
+.chatbot-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 20; /* Ensure it's always on top */
+  }
+  
+  .chatbot-icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .chatbot-icon img:hover {
+    transform: scale(1.1); /* Add hover effect */
+  }
+  

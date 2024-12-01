@@ -1,0 +1,191 @@
+/* Global Styles for Login and Register Pages */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
+  box-sizing: border-box;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
+  background-color: #f4f7fa;
+}
+
+/* Auth Box - Flex container */
+.auth-box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Left Half - Image Section */
+.auth-image {
+  flex: 1;
+  background: url('https://via.placeholder.com/800') center/cover no-repeat;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right Half - Form Section */
+.auth-form {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: #4CAF50;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Google Login Button */
+.google-login {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.google-login button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4285F4;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.google-login button:hover {
+  background-color: #357AE8;
+}
+
+.google-login button img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Register Link */
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link p {
+  font-size: 1rem;
+}
+
+.register-link a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .auth-box {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .auth-image {
+    height: 200px;
+    width: 100%;
+    background: url('https://via.placeholder.com/800') center/cover no-repeat;
+  }
+
+  .auth-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .google-login button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
